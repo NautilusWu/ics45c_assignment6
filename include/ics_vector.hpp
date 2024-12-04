@@ -17,6 +17,7 @@ Which include directives should you put here?
 */
 #include "vector_exception.hpp"
 #include <ostream>
+#include <cstdio>
 
 /*
 Templated Vector class definition with templated Iterator class member
