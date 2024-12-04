@@ -16,7 +16,7 @@ Which include directives should you put here?
 (hint: we may throw VectorExceptions. We also want to use ostream)
 */
 #include "vector_exception.hpp"
-#include <ostream>
+#include <iosfwd>
 
 /*
 Templated Vector class definition with templated Iterator class member
@@ -484,8 +484,7 @@ private:
     */
     friend std::ostream& operator<<(std::ostream& out, const Vector& vec) {
         for (size_t i = 0; i < vec.m_size; i++) {
-            out << vec.m_data[i];
-            out << " "; 
+            out << vec.m_data[i] << " "; 
         }
         return out;
     }
