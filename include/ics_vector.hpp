@@ -15,8 +15,8 @@ Some functions may throw exceptions while others are noexcept.
 Which include directives should you put here?
 (hint: we may throw VectorExceptions. We also want to use ostream)
 */
-#include <ostream>
 #include "vector_exception.hpp"
+#include <ostream>
 
 /*
 Templated Vector class definition with templated Iterator class member
